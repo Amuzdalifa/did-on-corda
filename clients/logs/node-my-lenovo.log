@@ -1,0 +1,279 @@
+[INFO ] 2023-10-03T03:04:45,587 [main] ServerKt - Starting ServerKt on my-lenovo with PID 39925 (/home/annisa/Documents/Corda/samples-kotlin/Basic/cordapp-example/clients/build/classes/kotlin/main started by annisa in /home/annisa/Documents/Corda/samples-kotlin/Basic/cordapp-example/clients)
+[INFO ] 2023-10-03T03:04:45,591 [main] ServerKt - No active profile set, falling back to default profiles: default
+[INFO ] 2023-10-03T03:04:45,625 [main] AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@48e92c5c: startup date [Tue Oct 03 10:04:45 WIB 2023]; root of context hierarchy
+[INFO ] 2023-10-03T03:04:46,319 [main] TomcatWebServer - Tomcat initialized with port(s): 50005 (http)
+[INFO ] 2023-10-03T03:04:46,329 [main] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-50005"]
+[INFO ] 2023-10-03T03:04:46,336 [main] StandardService - Starting service [Tomcat]
+[INFO ] 2023-10-03T03:04:46,336 [main] StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.31
+[INFO ] 2023-10-03T03:04:46,342 [localhost-startStop-1] AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+[INFO ] 2023-10-03T03:04:46,406 [localhost-startStop-1] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2023-10-03T03:04:46,406 [localhost-startStop-1] ContextLoader - Root WebApplicationContext: initialization completed in 783 ms
+[INFO ] 2023-10-03T03:04:46,496 [localhost-startStop-1] ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+[INFO ] 2023-10-03T03:04:46,499 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2023-10-03T03:04:46,499 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2023-10-03T03:04:46,500 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2023-10-03T03:04:46,500 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2023-10-03T03:04:48,083 [main] RPCClient - Startup took 721 msec
+[INFO ] 2023-10-03T03:04:48,534 [main] SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2023-10-03T03:04:48,606 [main] RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@48e92c5c: startup date [Tue Oct 03 10:04:45 WIB 2023]; root of context hierarchy
+[INFO ] 2023-10-03T03:04:48,660 [main] RequestMappingHandlerMapping - Mapped "{[/peers],methods=[GET],produces=[application/json]}" onto public final java.util.Map<java.lang.String, java.util.List<net.corda.core.identity.CordaX500Name>> net.corda.samples.example.webserver.Controller.getPeers()
+[INFO ] 2023-10-03T03:04:48,661 [main] RequestMappingHandlerMapping - Mapped "{[/me],methods=[GET],produces=[application/json]}" onto public final java.util.Map<java.lang.String, net.corda.core.identity.CordaX500Name> net.corda.samples.example.webserver.Controller.whoami()
+[INFO ] 2023-10-03T03:04:48,661 [main] RequestMappingHandlerMapping - Mapped "{[/ious],methods=[GET],produces=[application/json]}" onto public final org.springframework.http.ResponseEntity<java.util.List<net.corda.core.contracts.StateAndRef<net.corda.samples.example.states.IOUState>>> net.corda.samples.example.webserver.Controller.getIOUs()
+[INFO ] 2023-10-03T03:04:48,661 [main] RequestMappingHandlerMapping - Mapped "{[/create-iou],methods=[POST],consumes=[application/x-www-form-urlencoded],produces=[text/plain]}" onto public final org.springframework.http.ResponseEntity<java.lang.String> net.corda.samples.example.webserver.Controller.createIOU(javax.servlet.http.HttpServletRequest)
+[INFO ] 2023-10-03T03:04:48,662 [main] RequestMappingHandlerMapping - Mapped "{[/my-ious],methods=[GET],produces=[application/json]}" onto public final org.springframework.http.ResponseEntity<java.util.List<net.corda.core.contracts.StateAndRef<net.corda.samples.example.states.IOUState>>> net.corda.samples.example.webserver.Controller.getMyIOUs()
+[INFO ] 2023-10-03T03:04:48,663 [main] RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 2023-10-03T03:04:48,663 [main] RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 2023-10-03T03:04:48,678 [main] SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2023-10-03T03:04:48,678 [main] SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2023-10-03T03:04:48,713 [main] WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+[INFO ] 2023-10-03T03:04:48,896 [main] AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[INFO ] 2023-10-03T03:04:48,913 [main] Http11NioProtocol - Starting ProtocolHandler ["http-nio-50005"]
+[INFO ] 2023-10-03T03:04:48,919 [main] NioSelectorPool - Using a shared selector for servlet write/read
+[INFO ] 2023-10-03T03:04:48,940 [main] TomcatWebServer - Tomcat started on port(s): 50005 (http) with context path ''
+[INFO ] 2023-10-03T03:04:48,944 [main] ServerKt - Started ServerKt in 3.836 seconds (JVM running for 4.341)
+[INFO ] 2023-10-03T03:04:52,740 [Thread-3] AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@48e92c5c: startup date [Tue Oct 03 10:04:45 WIB 2023]; root of context hierarchy
+[INFO ] 2023-10-03T03:04:52,742 [Thread-3] AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+[WARN ] 2023-10-03T03:04:52,743 [Thread-3] CommonAnnotationBeanPostProcessor - Invocation of destroy method failed on bean with name 'nodeRPCConnection': kotlin.UninitializedPropertyAccessException: lateinit property rpcConnection has not been initialized
+[INFO ] 2023-10-03T03:48:26,377 [main] ServerKt - Starting ServerKt on my-lenovo with PID 41199 (/home/annisa/Documents/Corda/samples-kotlin/Basic/cordapp-example/clients/build/classes/kotlin/main started by annisa in /home/annisa/Documents/Corda/samples-kotlin/Basic/cordapp-example/clients)
+[INFO ] 2023-10-03T03:48:26,382 [main] ServerKt - No active profile set, falling back to default profiles: default
+[INFO ] 2023-10-03T03:48:26,427 [main] AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@48e92c5c: startup date [Tue Oct 03 10:48:26 WIB 2023]; root of context hierarchy
+[INFO ] 2023-10-03T03:48:27,109 [main] TomcatWebServer - Tomcat initialized with port(s): 50005 (http)
+[INFO ] 2023-10-03T03:48:27,119 [main] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-50005"]
+[INFO ] 2023-10-03T03:48:27,125 [main] StandardService - Starting service [Tomcat]
+[INFO ] 2023-10-03T03:48:27,126 [main] StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.31
+[INFO ] 2023-10-03T03:48:27,132 [localhost-startStop-1] AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+[INFO ] 2023-10-03T03:48:27,194 [localhost-startStop-1] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2023-10-03T03:48:27,194 [localhost-startStop-1] ContextLoader - Root WebApplicationContext: initialization completed in 771 ms
+[INFO ] 2023-10-03T03:48:27,276 [localhost-startStop-1] ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+[INFO ] 2023-10-03T03:48:27,279 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2023-10-03T03:48:27,279 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2023-10-03T03:48:27,279 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2023-10-03T03:48:27,279 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2023-10-03T03:48:28,782 [main] RPCClient - Startup took 633 msec
+[INFO ] 2023-10-03T03:48:29,197 [main] SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2023-10-03T03:48:29,325 [main] RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@48e92c5c: startup date [Tue Oct 03 10:48:26 WIB 2023]; root of context hierarchy
+[INFO ] 2023-10-03T03:48:29,387 [main] RequestMappingHandlerMapping - Mapped "{[/me],methods=[GET],produces=[application/json]}" onto public final java.util.Map<java.lang.String, net.corda.core.identity.CordaX500Name> net.corda.samples.example.webserver.MainController.whoami()
+[INFO ] 2023-10-03T03:48:29,388 [main] RequestMappingHandlerMapping - Mapped "{[/{did}],methods=[PUT],consumes=[multipart/form-data],produces=[application/json]}" onto public final org.springframework.web.context.request.async.DeferredResult<org.springframework.http.ResponseEntity<java.lang.Object>> net.corda.samples.example.webserver.MainController.createDID(java.lang.String,java.lang.String,java.lang.String)
+[INFO ] 2023-10-03T03:48:29,388 [main] RequestMappingHandlerMapping - Mapped "{[/{did}],methods=[GET],produces=[application/json]}" onto public final org.springframework.http.ResponseEntity<java.lang.Object> net.corda.samples.example.webserver.MainController.fetchDIDDocument(java.lang.String)
+[INFO ] 2023-10-03T03:48:29,389 [main] RequestMappingHandlerMapping - Mapped "{[/{did}],methods=[POST],consumes=[multipart/form-data],produces=[application/json]}" onto public final org.springframework.web.context.request.async.DeferredResult<org.springframework.http.ResponseEntity<java.lang.Object>> net.corda.samples.example.webserver.MainController.updateDID(java.lang.String,java.lang.String,java.lang.String)
+[INFO ] 2023-10-03T03:48:29,389 [main] RequestMappingHandlerMapping - Mapped "{[/{did}],methods=[DELETE],consumes=[multipart/form-data],produces=[application/json]}" onto public final org.springframework.web.context.request.async.DeferredResult<org.springframework.http.ResponseEntity<java.lang.Object>> net.corda.samples.example.webserver.MainController.deleteDID(java.lang.String,java.lang.String)
+[INFO ] 2023-10-03T03:48:29,391 [main] RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 2023-10-03T03:48:29,391 [main] RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 2023-10-03T03:48:29,409 [main] SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2023-10-03T03:48:29,410 [main] SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2023-10-03T03:48:29,449 [main] WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+[INFO ] 2023-10-03T03:48:29,531 [main] AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[INFO ] 2023-10-03T03:48:29,545 [main] Http11NioProtocol - Starting ProtocolHandler ["http-nio-50005"]
+[INFO ] 2023-10-03T03:48:29,551 [main] NioSelectorPool - Using a shared selector for servlet write/read
+[INFO ] 2023-10-03T03:48:29,568 [main] TomcatWebServer - Tomcat started on port(s): 50005 (http) with context path ''
+[INFO ] 2023-10-03T03:48:29,571 [main] ServerKt - Started ServerKt in 3.708 seconds (JVM running for 4.242)
+[INFO ] 2023-10-03T03:48:42,974 [http-nio-50005-exec-1] [/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[INFO ] 2023-10-03T03:48:42,974 [http-nio-50005-exec-1] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[INFO ] 2023-10-03T03:48:42,982 [http-nio-50005-exec-1] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 8 ms
+[ERROR] 2023-10-03T04:45:42,390 [http-nio-50005-exec-9] MainController - unsupported key spec
+[INFO ] 2023-10-03T04:47:38,334 [Thread-3] AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@48e92c5c: startup date [Tue Oct 03 10:48:26 WIB 2023]; root of context hierarchy
+[INFO ] 2023-10-03T04:47:38,335 [Thread-3] AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+[WARN ] 2023-10-03T04:47:38,336 [Thread-3] CommonAnnotationBeanPostProcessor - Invocation of destroy method failed on bean with name 'nodeRPCConnection': kotlin.UninitializedPropertyAccessException: lateinit property rpcConnection has not been initialized
+[INFO ] 2023-10-03T04:51:45,739 [main] ServerKt - Starting ServerKt on my-lenovo with PID 44964 (/home/annisa/Documents/Corda/samples-kotlin/Basic/cordapp-example/clients/build/classes/kotlin/main started by annisa in /home/annisa/Documents/Corda/samples-kotlin/Basic/cordapp-example/clients)
+[INFO ] 2023-10-03T04:51:45,742 [main] ServerKt - No active profile set, falling back to default profiles: default
+[INFO ] 2023-10-03T04:51:45,791 [main] AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@48e92c5c: startup date [Tue Oct 03 11:51:45 WIB 2023]; root of context hierarchy
+[INFO ] 2023-10-03T04:51:46,503 [main] TomcatWebServer - Tomcat initialized with port(s): 50005 (http)
+[INFO ] 2023-10-03T04:51:46,513 [main] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-50005"]
+[INFO ] 2023-10-03T04:51:46,520 [main] StandardService - Starting service [Tomcat]
+[INFO ] 2023-10-03T04:51:46,520 [main] StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.31
+[INFO ] 2023-10-03T04:51:46,526 [localhost-startStop-1] AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+[INFO ] 2023-10-03T04:51:46,592 [localhost-startStop-1] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2023-10-03T04:51:46,593 [localhost-startStop-1] ContextLoader - Root WebApplicationContext: initialization completed in 804 ms
+[INFO ] 2023-10-03T04:51:46,679 [localhost-startStop-1] ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+[INFO ] 2023-10-03T04:51:46,682 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2023-10-03T04:51:46,682 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2023-10-03T04:51:46,682 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2023-10-03T04:51:46,682 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2023-10-03T04:51:48,264 [main] RPCClient - Startup took 641 msec
+[INFO ] 2023-10-03T04:51:48,582 [main] SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2023-10-03T04:51:48,719 [main] RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@48e92c5c: startup date [Tue Oct 03 11:51:45 WIB 2023]; root of context hierarchy
+[INFO ] 2023-10-03T04:51:48,782 [main] RequestMappingHandlerMapping - Mapped "{[/me],methods=[GET],produces=[application/json]}" onto public final java.util.Map<java.lang.String, net.corda.core.identity.CordaX500Name> net.corda.samples.example.webserver.MainController.whoami()
+[INFO ] 2023-10-03T04:51:48,783 [main] RequestMappingHandlerMapping - Mapped "{[/{did}],methods=[PUT],consumes=[multipart/form-data],produces=[application/json]}" onto public final org.springframework.web.context.request.async.DeferredResult<org.springframework.http.ResponseEntity<java.lang.Object>> net.corda.samples.example.webserver.MainController.createDID(java.lang.String)
+[INFO ] 2023-10-03T04:51:48,784 [main] RequestMappingHandlerMapping - Mapped "{[/{did}],methods=[GET],produces=[application/json]}" onto public final org.springframework.http.ResponseEntity<java.lang.Object> net.corda.samples.example.webserver.MainController.fetchDIDDocument(java.lang.String)
+[INFO ] 2023-10-03T04:51:48,784 [main] RequestMappingHandlerMapping - Mapped "{[/{did}],methods=[POST],consumes=[multipart/form-data],produces=[application/json]}" onto public final org.springframework.web.context.request.async.DeferredResult<org.springframework.http.ResponseEntity<java.lang.Object>> net.corda.samples.example.webserver.MainController.updateDID(java.lang.String,java.lang.String,java.lang.String)
+[INFO ] 2023-10-03T04:51:48,784 [main] RequestMappingHandlerMapping - Mapped "{[/{did}],methods=[DELETE],consumes=[multipart/form-data],produces=[application/json]}" onto public final org.springframework.web.context.request.async.DeferredResult<org.springframework.http.ResponseEntity<java.lang.Object>> net.corda.samples.example.webserver.MainController.deleteDID(java.lang.String,java.lang.String)
+[INFO ] 2023-10-03T04:51:48,786 [main] RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 2023-10-03T04:51:48,787 [main] RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 2023-10-03T04:51:48,809 [main] SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2023-10-03T04:51:48,809 [main] SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2023-10-03T04:51:48,850 [main] WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+[INFO ] 2023-10-03T04:51:48,931 [main] AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[INFO ] 2023-10-03T04:51:48,945 [main] Http11NioProtocol - Starting ProtocolHandler ["http-nio-50005"]
+[INFO ] 2023-10-03T04:51:48,952 [main] NioSelectorPool - Using a shared selector for servlet write/read
+[INFO ] 2023-10-03T04:51:48,968 [main] TomcatWebServer - Tomcat started on port(s): 50005 (http) with context path ''
+[INFO ] 2023-10-03T04:51:48,972 [main] ServerKt - Started ServerKt in 3.736 seconds (JVM running for 4.27)
+[INFO ] 2023-10-03T04:52:31,256 [http-nio-50005-exec-1] [/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[INFO ] 2023-10-03T04:52:31,256 [http-nio-50005-exec-1] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[INFO ] 2023-10-03T04:52:31,264 [http-nio-50005-exec-1] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 7 ms
+[INFO ] 2023-10-03T04:58:06,240 [Thread-3] AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@48e92c5c: startup date [Tue Oct 03 11:51:45 WIB 2023]; root of context hierarchy
+[INFO ] 2023-10-03T04:58:06,242 [Thread-3] AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+[WARN ] 2023-10-03T04:58:06,244 [Thread-3] CommonAnnotationBeanPostProcessor - Invocation of destroy method failed on bean with name 'nodeRPCConnection': kotlin.UninitializedPropertyAccessException: lateinit property rpcConnection has not been initialized
+[INFO ] 2023-10-03T04:58:10,086 [main] ServerKt - Starting ServerKt on my-lenovo with PID 45402 (/home/annisa/Documents/Corda/samples-kotlin/Basic/cordapp-example/clients/build/classes/kotlin/main started by annisa in /home/annisa/Documents/Corda/samples-kotlin/Basic/cordapp-example/clients)
+[INFO ] 2023-10-03T04:58:10,090 [main] ServerKt - No active profile set, falling back to default profiles: default
+[INFO ] 2023-10-03T04:58:10,133 [main] AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@48e92c5c: startup date [Tue Oct 03 11:58:10 WIB 2023]; root of context hierarchy
+[INFO ] 2023-10-03T04:58:10,889 [main] TomcatWebServer - Tomcat initialized with port(s): 50005 (http)
+[INFO ] 2023-10-03T04:58:10,901 [main] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-50005"]
+[INFO ] 2023-10-03T04:58:10,909 [main] StandardService - Starting service [Tomcat]
+[INFO ] 2023-10-03T04:58:10,910 [main] StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.31
+[INFO ] 2023-10-03T04:58:10,917 [localhost-startStop-1] AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+[INFO ] 2023-10-03T04:58:10,994 [localhost-startStop-1] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2023-10-03T04:58:10,994 [localhost-startStop-1] ContextLoader - Root WebApplicationContext: initialization completed in 864 ms
+[INFO ] 2023-10-03T04:58:11,104 [localhost-startStop-1] ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+[INFO ] 2023-10-03T04:58:11,108 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2023-10-03T04:58:11,108 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2023-10-03T04:58:11,108 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2023-10-03T04:58:11,108 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2023-10-03T04:58:12,724 [main] RPCClient - Startup took 681 msec
+[INFO ] 2023-10-03T04:58:13,082 [main] SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2023-10-03T04:58:13,223 [main] RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@48e92c5c: startup date [Tue Oct 03 11:58:10 WIB 2023]; root of context hierarchy
+[INFO ] 2023-10-03T04:58:13,283 [main] RequestMappingHandlerMapping - Mapped "{[/me],methods=[GET],produces=[application/json]}" onto public final java.util.Map<java.lang.String, net.corda.core.identity.CordaX500Name> net.corda.samples.example.webserver.MainController.whoami()
+[INFO ] 2023-10-03T04:58:13,284 [main] RequestMappingHandlerMapping - Mapped "{[/{did}],methods=[PUT],consumes=[multipart/form-data],produces=[application/json]}" onto public final org.springframework.web.context.request.async.DeferredResult<org.springframework.http.ResponseEntity<java.lang.Object>> net.corda.samples.example.webserver.MainController.createDID(java.lang.String,java.lang.String,java.lang.String)
+[INFO ] 2023-10-03T04:58:13,285 [main] RequestMappingHandlerMapping - Mapped "{[/{did}],methods=[GET],produces=[application/json]}" onto public final org.springframework.http.ResponseEntity<java.lang.Object> net.corda.samples.example.webserver.MainController.fetchDIDDocument(java.lang.String)
+[INFO ] 2023-10-03T04:58:13,285 [main] RequestMappingHandlerMapping - Mapped "{[/{did}],methods=[POST],consumes=[multipart/form-data],produces=[application/json]}" onto public final org.springframework.web.context.request.async.DeferredResult<org.springframework.http.ResponseEntity<java.lang.Object>> net.corda.samples.example.webserver.MainController.updateDID(java.lang.String,java.lang.String,java.lang.String)
+[INFO ] 2023-10-03T04:58:13,285 [main] RequestMappingHandlerMapping - Mapped "{[/{did}],methods=[DELETE],consumes=[multipart/form-data],produces=[application/json]}" onto public final org.springframework.web.context.request.async.DeferredResult<org.springframework.http.ResponseEntity<java.lang.Object>> net.corda.samples.example.webserver.MainController.deleteDID(java.lang.String,java.lang.String)
+[INFO ] 2023-10-03T04:58:13,288 [main] RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 2023-10-03T04:58:13,289 [main] RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 2023-10-03T04:58:13,308 [main] SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2023-10-03T04:58:13,308 [main] SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2023-10-03T04:58:13,346 [main] WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+[INFO ] 2023-10-03T04:58:13,434 [main] AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[INFO ] 2023-10-03T04:58:13,448 [main] Http11NioProtocol - Starting ProtocolHandler ["http-nio-50005"]
+[INFO ] 2023-10-03T04:58:13,455 [main] NioSelectorPool - Using a shared selector for servlet write/read
+[INFO ] 2023-10-03T04:58:13,474 [main] TomcatWebServer - Tomcat started on port(s): 50005 (http) with context path ''
+[INFO ] 2023-10-03T04:58:13,479 [main] ServerKt - Started ServerKt in 3.959 seconds (JVM running for 4.513)
+[INFO ] 2023-10-03T04:58:23,613 [http-nio-50005-exec-1] [/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[INFO ] 2023-10-03T04:58:23,613 [http-nio-50005-exec-1] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[INFO ] 2023-10-03T04:58:23,625 [http-nio-50005-exec-1] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 12 ms
+[ERROR] 2023-10-03T05:05:02,004 [pool-5-thread-1] MainController - net.corda.core.cordapp.CordappConfigException: Cordapp configuration is incorrect due to exception
+[ERROR] 2023-10-03T05:10:04,019 [pool-5-thread-1] MainController - net.corda.core.cordapp.CordappConfigException: Cordapp configuration is incorrect due to exception
+[INFO ] 2023-10-03T05:10:21,432 [Thread-3] AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@48e92c5c: startup date [Tue Oct 03 11:58:10 WIB 2023]; root of context hierarchy
+[INFO ] 2023-10-03T05:10:21,435 [Thread-3] AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+[WARN ] 2023-10-03T05:10:21,436 [Thread-3] CommonAnnotationBeanPostProcessor - Invocation of destroy method failed on bean with name 'nodeRPCConnection': kotlin.UninitializedPropertyAccessException: lateinit property rpcConnection has not been initialized
+[INFO ] 2023-10-03T05:10:24,863 [main] ServerKt - Starting ServerKt on my-lenovo with PID 45890 (/home/annisa/Documents/Corda/samples-kotlin/Basic/cordapp-example/clients/build/classes/kotlin/main started by annisa in /home/annisa/Documents/Corda/samples-kotlin/Basic/cordapp-example/clients)
+[INFO ] 2023-10-03T05:10:24,867 [main] ServerKt - No active profile set, falling back to default profiles: default
+[INFO ] 2023-10-03T05:10:24,906 [main] AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@48e92c5c: startup date [Tue Oct 03 12:10:24 WIB 2023]; root of context hierarchy
+[INFO ] 2023-10-03T05:10:25,653 [main] TomcatWebServer - Tomcat initialized with port(s): 50005 (http)
+[INFO ] 2023-10-03T05:10:25,663 [main] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-50005"]
+[INFO ] 2023-10-03T05:10:25,670 [main] StandardService - Starting service [Tomcat]
+[INFO ] 2023-10-03T05:10:25,670 [main] StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.31
+[INFO ] 2023-10-03T05:10:25,677 [localhost-startStop-1] AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+[INFO ] 2023-10-03T05:10:25,745 [localhost-startStop-1] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2023-10-03T05:10:25,745 [localhost-startStop-1] ContextLoader - Root WebApplicationContext: initialization completed in 841 ms
+[INFO ] 2023-10-03T05:10:25,832 [localhost-startStop-1] ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+[INFO ] 2023-10-03T05:10:25,835 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2023-10-03T05:10:25,835 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2023-10-03T05:10:25,835 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2023-10-03T05:10:25,836 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2023-10-03T05:10:27,480 [main] RPCClient - Startup took 766 msec
+[INFO ] 2023-10-03T05:10:27,895 [main] SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2023-10-03T05:10:28,034 [main] RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@48e92c5c: startup date [Tue Oct 03 12:10:24 WIB 2023]; root of context hierarchy
+[INFO ] 2023-10-03T05:10:28,098 [main] RequestMappingHandlerMapping - Mapped "{[/{did}],methods=[GET],produces=[application/json]}" onto public final org.springframework.http.ResponseEntity<java.lang.Object> net.corda.samples.example.webserver.MainController.fetchDIDDocument(java.lang.String)
+[INFO ] 2023-10-03T05:10:28,100 [main] RequestMappingHandlerMapping - Mapped "{[/me],methods=[GET],produces=[application/json]}" onto public final java.util.Map<java.lang.String, net.corda.core.identity.CordaX500Name> net.corda.samples.example.webserver.MainController.whoami()
+[INFO ] 2023-10-03T05:10:28,100 [main] RequestMappingHandlerMapping - Mapped "{[/{did}],methods=[PUT],consumes=[multipart/form-data],produces=[application/json]}" onto public final org.springframework.web.context.request.async.DeferredResult<org.springframework.http.ResponseEntity<java.lang.Object>> net.corda.samples.example.webserver.MainController.createDID(java.lang.String,java.lang.String,java.lang.String)
+[INFO ] 2023-10-03T05:10:28,101 [main] RequestMappingHandlerMapping - Mapped "{[/{did}],methods=[POST],consumes=[multipart/form-data],produces=[application/json]}" onto public final org.springframework.web.context.request.async.DeferredResult<org.springframework.http.ResponseEntity<java.lang.Object>> net.corda.samples.example.webserver.MainController.updateDID(java.lang.String,java.lang.String,java.lang.String)
+[INFO ] 2023-10-03T05:10:28,101 [main] RequestMappingHandlerMapping - Mapped "{[/{did}],methods=[DELETE],consumes=[multipart/form-data],produces=[application/json]}" onto public final org.springframework.web.context.request.async.DeferredResult<org.springframework.http.ResponseEntity<java.lang.Object>> net.corda.samples.example.webserver.MainController.deleteDID(java.lang.String,java.lang.String)
+[INFO ] 2023-10-03T05:10:28,103 [main] RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 2023-10-03T05:10:28,104 [main] RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 2023-10-03T05:10:28,128 [main] SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2023-10-03T05:10:28,129 [main] SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2023-10-03T05:10:28,173 [main] WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+[INFO ] 2023-10-03T05:10:28,267 [main] AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[INFO ] 2023-10-03T05:10:28,282 [main] Http11NioProtocol - Starting ProtocolHandler ["http-nio-50005"]
+[INFO ] 2023-10-03T05:10:28,289 [main] NioSelectorPool - Using a shared selector for servlet write/read
+[INFO ] 2023-10-03T05:10:28,306 [main] TomcatWebServer - Tomcat started on port(s): 50005 (http) with context path ''
+[INFO ] 2023-10-03T05:10:28,310 [main] ServerKt - Started ServerKt in 4.003 seconds (JVM running for 4.612)
+[INFO ] 2023-10-03T05:11:46,663 [http-nio-50005-exec-1] [/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[INFO ] 2023-10-03T05:11:46,664 [http-nio-50005-exec-1] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[INFO ] 2023-10-03T05:11:46,673 [http-nio-50005-exec-1] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 9 ms
+[ERROR] 2023-10-03T05:11:46,944 [pool-5-thread-1] MainController - net.corda.core.cordapp.CordappConfigException: Cordapp configuration is incorrect due to exception
+[INFO ] 2023-10-03T05:12:51,803 [Thread-3] AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@48e92c5c: startup date [Tue Oct 03 12:10:24 WIB 2023]; root of context hierarchy
+[INFO ] 2023-10-03T05:12:51,805 [Thread-3] AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+[WARN ] 2023-10-03T05:12:51,806 [Thread-3] CommonAnnotationBeanPostProcessor - Invocation of destroy method failed on bean with name 'nodeRPCConnection': kotlin.UninitializedPropertyAccessException: lateinit property rpcConnection has not been initialized
+[INFO ] 2023-10-03T05:18:45,841 [main] ServerKt - Starting ServerKt on my-lenovo with PID 49488 (/home/annisa/Documents/Corda/samples-kotlin/Basic/cordapp-example/clients/build/classes/kotlin/main started by annisa in /home/annisa/Documents/Corda/samples-kotlin/Basic/cordapp-example/clients)
+[INFO ] 2023-10-03T05:18:45,850 [main] ServerKt - No active profile set, falling back to default profiles: default
+[INFO ] 2023-10-03T05:18:45,886 [main] AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@48e92c5c: startup date [Tue Oct 03 12:18:45 WIB 2023]; root of context hierarchy
+[INFO ] 2023-10-03T05:18:46,630 [main] TomcatWebServer - Tomcat initialized with port(s): 50005 (http)
+[INFO ] 2023-10-03T05:18:46,641 [main] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-50005"]
+[INFO ] 2023-10-03T05:18:46,649 [main] StandardService - Starting service [Tomcat]
+[INFO ] 2023-10-03T05:18:46,650 [main] StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.31
+[INFO ] 2023-10-03T05:18:46,657 [localhost-startStop-1] AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+[INFO ] 2023-10-03T05:18:46,723 [localhost-startStop-1] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2023-10-03T05:18:46,723 [localhost-startStop-1] ContextLoader - Root WebApplicationContext: initialization completed in 839 ms
+[INFO ] 2023-10-03T05:18:46,810 [localhost-startStop-1] ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+[INFO ] 2023-10-03T05:18:46,813 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2023-10-03T05:18:46,813 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2023-10-03T05:18:46,813 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2023-10-03T05:18:46,813 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2023-10-03T05:18:48,771 [main] RPCClient - Startup took 800 msec
+[INFO ] 2023-10-03T05:18:49,127 [main] SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2023-10-03T05:18:49,275 [main] RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@48e92c5c: startup date [Tue Oct 03 12:18:45 WIB 2023]; root of context hierarchy
+[INFO ] 2023-10-03T05:18:49,341 [main] RequestMappingHandlerMapping - Mapped "{[/{did}],methods=[GET],produces=[application/json]}" onto public final org.springframework.http.ResponseEntity<java.lang.Object> net.corda.samples.example.webserver.MainController.fetchDIDDocument(java.lang.String)
+[INFO ] 2023-10-03T05:18:49,342 [main] RequestMappingHandlerMapping - Mapped "{[/me],methods=[GET],produces=[application/json]}" onto public final java.util.Map<java.lang.String, net.corda.core.identity.CordaX500Name> net.corda.samples.example.webserver.MainController.whoami()
+[INFO ] 2023-10-03T05:18:49,343 [main] RequestMappingHandlerMapping - Mapped "{[/{did}],methods=[PUT],consumes=[multipart/form-data],produces=[application/json]}" onto public final org.springframework.web.context.request.async.DeferredResult<org.springframework.http.ResponseEntity<java.lang.Object>> net.corda.samples.example.webserver.MainController.createDID(java.lang.String,java.lang.String,java.lang.String)
+[INFO ] 2023-10-03T05:18:49,343 [main] RequestMappingHandlerMapping - Mapped "{[/{did}],methods=[POST],consumes=[multipart/form-data],produces=[application/json]}" onto public final org.springframework.web.context.request.async.DeferredResult<org.springframework.http.ResponseEntity<java.lang.Object>> net.corda.samples.example.webserver.MainController.updateDID(java.lang.String,java.lang.String,java.lang.String)
+[INFO ] 2023-10-03T05:18:49,343 [main] RequestMappingHandlerMapping - Mapped "{[/{did}],methods=[DELETE],consumes=[multipart/form-data],produces=[application/json]}" onto public final org.springframework.web.context.request.async.DeferredResult<org.springframework.http.ResponseEntity<java.lang.Object>> net.corda.samples.example.webserver.MainController.deleteDID(java.lang.String,java.lang.String)
+[INFO ] 2023-10-03T05:18:49,346 [main] RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 2023-10-03T05:18:49,346 [main] RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 2023-10-03T05:18:49,366 [main] SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2023-10-03T05:18:49,366 [main] SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2023-10-03T05:18:49,407 [main] WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+[INFO ] 2023-10-03T05:18:49,529 [main] AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[INFO ] 2023-10-03T05:18:49,544 [main] Http11NioProtocol - Starting ProtocolHandler ["http-nio-50005"]
+[INFO ] 2023-10-03T05:18:49,550 [main] NioSelectorPool - Using a shared selector for servlet write/read
+[INFO ] 2023-10-03T05:18:49,568 [main] TomcatWebServer - Tomcat started on port(s): 50005 (http) with context path ''
+[INFO ] 2023-10-03T05:18:49,573 [main] ServerKt - Started ServerKt in 4.253 seconds (JVM running for 4.817)
+[INFO ] 2023-10-03T05:18:57,146 [http-nio-50005-exec-1] [/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[INFO ] 2023-10-03T05:18:57,146 [http-nio-50005-exec-1] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[INFO ] 2023-10-03T05:18:57,157 [http-nio-50005-exec-1] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 11 ms
+[ERROR] 2023-10-03T05:18:58,013 [pool-5-thread-1] MainController - net.corda.core.cordapp.CordappConfigException: Cordapp configuration is incorrect due to exception
+[ERROR] 2023-10-03T05:19:03,962 [pool-5-thread-1] MainController - net.corda.core.cordapp.CordappConfigException: Cordapp configuration is incorrect due to exception
+[INFO ] 2023-10-03T05:20:25,496 [Thread-3] AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@48e92c5c: startup date [Tue Oct 03 12:18:45 WIB 2023]; root of context hierarchy
+[INFO ] 2023-10-03T05:20:25,498 [Thread-3] AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+[WARN ] 2023-10-03T05:20:25,500 [Thread-3] CommonAnnotationBeanPostProcessor - Invocation of destroy method failed on bean with name 'nodeRPCConnection': kotlin.UninitializedPropertyAccessException: lateinit property rpcConnection has not been initialized
+[INFO ] 2023-10-03T05:22:53,021 [main] ServerKt - Starting ServerKt on my-lenovo with PID 52781 (/home/annisa/Documents/Corda/samples-kotlin/Basic/cordapp-example/clients/build/classes/kotlin/main started by annisa in /home/annisa/Documents/Corda/samples-kotlin/Basic/cordapp-example/clients)
+[INFO ] 2023-10-03T05:22:53,024 [main] ServerKt - No active profile set, falling back to default profiles: default
+[INFO ] 2023-10-03T05:22:53,070 [main] AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@48e92c5c: startup date [Tue Oct 03 12:22:53 WIB 2023]; root of context hierarchy
+[INFO ] 2023-10-03T05:22:53,816 [main] TomcatWebServer - Tomcat initialized with port(s): 50005 (http)
+[INFO ] 2023-10-03T05:22:53,827 [main] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-50005"]
+[INFO ] 2023-10-03T05:22:53,834 [main] StandardService - Starting service [Tomcat]
+[INFO ] 2023-10-03T05:22:53,835 [main] StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.31
+[INFO ] 2023-10-03T05:22:53,841 [localhost-startStop-1] AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+[INFO ] 2023-10-03T05:22:53,907 [localhost-startStop-1] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2023-10-03T05:22:53,907 [localhost-startStop-1] ContextLoader - Root WebApplicationContext: initialization completed in 840 ms
+[INFO ] 2023-10-03T05:22:54,000 [localhost-startStop-1] ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+[INFO ] 2023-10-03T05:22:54,003 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2023-10-03T05:22:54,004 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2023-10-03T05:22:54,004 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2023-10-03T05:22:54,004 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2023-10-03T05:22:55,624 [main] RPCClient - Startup took 713 msec
+[INFO ] 2023-10-03T05:22:55,986 [main] SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2023-10-03T05:22:56,133 [main] RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@48e92c5c: startup date [Tue Oct 03 12:22:53 WIB 2023]; root of context hierarchy
+[INFO ] 2023-10-03T05:22:56,201 [main] RequestMappingHandlerMapping - Mapped "{[/me],methods=[GET],produces=[application/json]}" onto public final java.util.Map<java.lang.String, net.corda.core.identity.CordaX500Name> net.corda.samples.example.webserver.MainController.whoami()
+[INFO ] 2023-10-03T05:22:56,202 [main] RequestMappingHandlerMapping - Mapped "{[/{did}],methods=[PUT],consumes=[multipart/form-data],produces=[application/json]}" onto public final org.springframework.web.context.request.async.DeferredResult<org.springframework.http.ResponseEntity<java.lang.Object>> net.corda.samples.example.webserver.MainController.createDID(java.lang.String,java.lang.String,java.lang.String)
+[INFO ] 2023-10-03T05:22:56,203 [main] RequestMappingHandlerMapping - Mapped "{[/{did}],methods=[GET],produces=[application/json]}" onto public final org.springframework.http.ResponseEntity<java.lang.Object> net.corda.samples.example.webserver.MainController.fetchDIDDocument(java.lang.String)
+[INFO ] 2023-10-03T05:22:56,203 [main] RequestMappingHandlerMapping - Mapped "{[/{did}],methods=[POST],consumes=[multipart/form-data],produces=[application/json]}" onto public final org.springframework.web.context.request.async.DeferredResult<org.springframework.http.ResponseEntity<java.lang.Object>> net.corda.samples.example.webserver.MainController.updateDID(java.lang.String,java.lang.String,java.lang.String)
+[INFO ] 2023-10-03T05:22:56,203 [main] RequestMappingHandlerMapping - Mapped "{[/{did}],methods=[DELETE],consumes=[multipart/form-data],produces=[application/json]}" onto public final org.springframework.web.context.request.async.DeferredResult<org.springframework.http.ResponseEntity<java.lang.Object>> net.corda.samples.example.webserver.MainController.deleteDID(java.lang.String,java.lang.String)
+[INFO ] 2023-10-03T05:22:56,205 [main] RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 2023-10-03T05:22:56,206 [main] RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 2023-10-03T05:22:56,229 [main] SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2023-10-03T05:22:56,229 [main] SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2023-10-03T05:22:56,275 [main] WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+[INFO ] 2023-10-03T05:22:56,366 [main] AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[INFO ] 2023-10-03T05:22:56,382 [main] Http11NioProtocol - Starting ProtocolHandler ["http-nio-50005"]
+[INFO ] 2023-10-03T05:22:56,389 [main] NioSelectorPool - Using a shared selector for servlet write/read
+[INFO ] 2023-10-03T05:22:56,407 [main] TomcatWebServer - Tomcat started on port(s): 50005 (http) with context path ''
+[INFO ] 2023-10-03T05:22:56,411 [main] ServerKt - Started ServerKt in 3.906 seconds (JVM running for 4.441)
+[INFO ] 2023-10-03T05:23:12,560 [http-nio-50005-exec-1] [/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[INFO ] 2023-10-03T05:23:12,560 [http-nio-50005-exec-1] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[INFO ] 2023-10-03T05:23:12,605 [http-nio-50005-exec-1] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 45 ms
+[ERROR] 2023-10-03T05:23:13,451 [pool-5-thread-1] MainController - net.corda.core.cordapp.CordappConfigException: Cordapp configuration is incorrect due to exception
+[WARN ] 2023-10-03T05:34:13,836 [Thread-1 (ActiveMQ-client-factory-threads-1680365850)] client - AMQ212037: Connection failure to localhost/127.0.0.1:10006 has been detected: AMQ219015: The connection was disconnected because of server shutdown [code=DISCONNECTED]
+[WARN ] 2023-10-03T05:34:13,838 [Thread-1 (ActiveMQ-client-factory-threads-1680365850)] RPCClientProxyHandler - Terminating observables.
+[INFO ] 2023-10-03T09:51:51,520 [Thread-3] AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@48e92c5c: startup date [Tue Oct 03 12:22:53 WIB 2023]; root of context hierarchy
+[INFO ] 2023-10-03T09:51:51,524 [Thread-3] AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+[WARN ] 2023-10-03T09:51:51,527 [Thread-3] CommonAnnotationBeanPostProcessor - Invocation of destroy method failed on bean with name 'nodeRPCConnection': kotlin.UninitializedPropertyAccessException: lateinit property rpcConnection has not been initialized
